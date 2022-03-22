@@ -1,7 +1,8 @@
 # Minimal reproduction
 
 [Github issue](https://github.com/renovatebot/renovate/issues/14551)
-[Logs](https://github.com/renovatebot/renovate/issues/14551)
+
+[Logs](https://github.com/christoferolaison/renovate-body-is-too-long/blob/main/logs)
 
 ## Current behavior
 
@@ -27,6 +28,8 @@ together with these deps
   }
 }
 ```
+
+See [dashboard](https://github.com/christoferolaison/renovate-body-is-too-long/issues/4)
 
 ## Expected behavior
 
