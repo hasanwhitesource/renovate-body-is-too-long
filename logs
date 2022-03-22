@@ -1,0 +1,693 @@
+christoferolaison/renovate-body-is-too-long: #610189464
+×
+Level
+
+DEBUG
+Branch
+Any
+Dependency
+Any
+DEBUG: No dangling containers to remove
+INFO: Repository started
+{
+  "renovateVersion": "32.6.9"
+}
+DEBUG: Using localDir: /mnt/renovate/gh/christoferolaison/renovate-body-is-too-long
+DEBUG: Repository cache is valid
+DEBUG: initRepo("christoferolaison/renovate-body-is-too-long")
+DEBUG: Overriding default GitHub endpoint
+{
+  "endpoint": "https://api.github.com/"
+}
+DEBUG: christoferolaison/renovate-body-is-too-long default branch = main
+DEBUG: Using app token for git init
+DEBUG: resetMemCache()
+DEBUG: Resetting npmrc
+DEBUG: detectSemanticCommits()
+DEBUG: checkOnboarding()
+DEBUG: isOnboarded()
+DEBUG: Checking cached config file name
+DEBUG: Existing config file confirmed
+DEBUG: Repo is onboarded
+DEBUG: migrateAndValidate()
+DEBUG: No config migration necessary
+DEBUG: massaged config
+{
+  "config": {
+    "extends": [
+      "github>whitesource/merge-confidence:beta",
+      "config:base"
+    ],
+    "major": {
+      "enabled": false
+    },
+    "packageRules": [
+      {
+        "groupName": "all deps",
+        "matchPaths": [
+          "+(package.json)"
+        ]
+      }
+    ]
+  }
+}
+DEBUG: migrated config
+{
+  "config": {
+    "extends": [
+      "github>whitesource/merge-confidence:beta",
+      "config:base"
+    ],
+    "major": {
+      "enabled": false
+    },
+    "packageRules": [
+      {
+        "groupName": "all deps",
+        "matchPaths": [
+          "+(package.json)"
+        ]
+      }
+    ]
+  }
+}
+DEBUG: Setting hostRules from config
+DEBUG: Found repo ignorePaths
+{
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**",
+    "**/examples/**",
+    "**/__tests__/**",
+    "**/test/**",
+    "**/tests/**",
+    "**/__fixtures__/**"
+  ]
+}
+DEBUG: No vulnerability alerts found
+DEBUG: No vulnerability alerts found
+DEBUG: findIssue(Dependency Dashboard)
+DEBUG: Retrieving issueList
+DEBUG: Retrieved 1 issues
+DEBUG: Found issue 4
+DEBUG: No baseBranches
+DEBUG: extract()
+DEBUG: Setting current branch to main
+DEBUG: Initializing git repository into /mnt/renovate/gh/christoferolaison/renovate-body-is-too-long
+DEBUG: Performing blobless clone
+DEBUG: git clone completed
+{
+  "durationMs": 862
+}
+DEBUG: latest repository commit
+{
+  "latestCommit": {
+    "hash": "3bcd90c831ce5c741dd86147eb84e4076359581a",
+    "date": "2022-03-22T12:55:38+01:00",
+    "message": "minimal",
+    "refs": "HEAD -> main, origin/main, origin/HEAD",
+    "body": "",
+    "author_name": "Christofer Olaison",
+    "author_email": "christofer.olaison@mentimeter.com"
+  }
+}
+DEBUG: latest commit
+{
+  "branchName": "main",
+  "latestCommitDate": "2022-03-22T12:55:38+01:00"
+}
+DEBUG: Using file match: (^|/)tasks/[^/]+\.ya?ml$ for manager ansible
+DEBUG: Using file match: (^|/)requirements\.ya?ml$ for manager ansible-galaxy
+DEBUG: Using file match: (^|/)galaxy\.ya?ml$ for manager ansible-galaxy
+DEBUG: Using file match: azure.*pipelines?.*\.ya?ml$ for manager azure-pipelines
+DEBUG: Using file match: (^|/)batect(-bundle)?\.yml$ for manager batect
+DEBUG: Using file match: (^|/)batect$ for manager batect-wrapper
+DEBUG: Using file match: (^|/)WORKSPACE(|\.bazel)$ for manager bazel
+DEBUG: Using file match: \.bzl$ for manager bazel
+DEBUG: Using file match: (^|/)\.?bitbucket-pipelines\.ya?ml$ for manager bitbucket-pipelines
+DEBUG: Using file match: buildkite\.ya?ml for manager buildkite
+DEBUG: Using file match: \.buildkite/.+\.ya?ml$ for manager buildkite
+DEBUG: Using file match: (^|/)Gemfile$ for manager bundler
+DEBUG: Using file match: \.cake$ for manager cake
+DEBUG: Using file match: (^|/)Cargo.toml$ for manager cargo
+DEBUG: Using file match: (^|/).circleci/config.yml$ for manager circleci
+DEBUG: Using file match: (^|/)cloudbuild.ya?ml for manager cloudbuild
+DEBUG: Using file match: (^|/)Podfile$ for manager cocoapods
+DEBUG: Using file match: (^|/)([\w-]*)composer.json$ for manager composer
+DEBUG: Using file match: (^|/)conanfile\.(txt|py)$ for manager conan
+DEBUG: Using file match: (^|/)deps\.edn$ for manager deps-edn
+DEBUG: Using file match: (^|/)docker-compose[^/]*\.ya?ml$ for manager docker-compose
+DEBUG: Using file match: (^|/|\.)Dockerfile$ for manager dockerfile
+DEBUG: Using file match: (^|/)Dockerfile\.[^/]*$ for manager dockerfile
+DEBUG: Using file match: (^|/).drone.yml$ for manager droneci
+DEBUG: Using file match: (^|/)flux-system/gotk-components\.yaml$ for manager flux
+DEBUG: Using file match: (^|\/)\.fvm\/fvm_config\.json$ for manager fvm
+DEBUG: Using file match: (^|/).gitmodules$ for manager git-submodules
+DEBUG: Using file match: (^workflow-templates|\.github\/workflows)\/[^/]+\.ya?ml$ for manager github-actions
+DEBUG: Using file match: (^|\/)action\.ya?ml$ for manager github-actions
+DEBUG: Using file match: \.gitlab-ci\.yml$ for manager gitlabci
+DEBUG: Using file match: \.gitlab-ci\.yml$ for manager gitlabci-include
+DEBUG: Using file match: (^|/)go.mod$ for manager gomod
+DEBUG: Using file match: \.gradle(\.kts)?$ for manager gradle
+DEBUG: Using file match: (^|\/)gradle\.properties$ for manager gradle
+DEBUG: Using file match: (^|\/)gradle\/.+\.toml$ for manager gradle
+DEBUG: Using file match: \.versions\.toml$ for manager gradle
+DEBUG: Using file match: (^|/)gradle/wrapper/gradle-wrapper.properties$ for manager gradle-wrapper
+DEBUG: Using file match: (^|/)requirements\.yaml$ for manager helm-requirements
+DEBUG: Using file match: (^|/)values.yaml$ for manager helm-values
+DEBUG: Using file match: (^|/)helmfile.yaml$ for manager helmfile
+DEBUG: Using file match: (^|/)Chart.yaml$ for manager helmv3
+DEBUG: Using file match: ^Formula/[^/]+[.]rb$ for manager homebrew
+DEBUG: Using file match: \.html?$ for manager html
+DEBUG: Using file match: (^|/)plugins\.(txt|ya?ml)$ for manager jenkins
+DEBUG: Using file match: (^|/)jsonnetfile.json$ for manager jsonnet-bundler
+DEBUG: Using file match: (^|/)kustomization\.ya?ml$ for manager kustomize
+DEBUG: Using file match: (^|/)project\.clj$ for manager leiningen
+DEBUG: Using file match: (^|/|\.)pom\.xml$ for manager maven
+DEBUG: Using file match: ^(((\.mvn)|(\.m2))/)?settings\.xml$ for manager maven
+DEBUG: Using file match: (^|/)package.js$ for manager meteor
+DEBUG: Using file match: (^|/)mix\.exs$ for manager mix
+DEBUG: Using file match: (^|/).node-version$ for manager nodenv
+DEBUG: Using file match: (^|/)package.json$ for manager npm
+DEBUG: Using file match: \.(?:cs|fs|vb)proj$ for manager nuget
+DEBUG: Using file match: \.(?:props|targets)$ for manager nuget
+DEBUG: Using file match: (^|\/)dotnet-tools\.json$ for manager nuget
+DEBUG: Using file match: (^|\/)global\.json$ for manager nuget
+DEBUG: Using file match: (^|/)\.nvmrc$ for manager nvm
+DEBUG: Using file match: (^|/)([\w-]*)requirements\.(txt|pip)$ for manager pip_requirements
+DEBUG: Using file match: (^|/)setup.py$ for manager pip_setup
+DEBUG: Using file match: (^|/)Pipfile$ for manager pipenv
+DEBUG: Using file match: (^|/)pyproject\.toml$ for manager poetry
+DEBUG: Using file match: (^|/)\.pre-commit-config\.yaml$ for manager pre-commit
+DEBUG: Using file match: (^|/)pubspec\.ya?ml$ for manager pub
+DEBUG: Using file match: (^|/).python-version$ for manager pyenv
+DEBUG: Using file match: (^|/)\.ruby-version$ for manager ruby-version
+DEBUG: Using file match: \.sbt$ for manager sbt
+DEBUG: Using file match: project/[^/]*.scala$ for manager sbt
+DEBUG: Using file match: (^|/)setup\.cfg$ for manager setup-cfg
+DEBUG: Using file match: (^|/)Package\.swift for manager swift
+DEBUG: Using file match: \.tf$ for manager terraform
+DEBUG: Using file match: (^|/)\.terraform-version$ for manager terraform-version
+DEBUG: Using file match: (^|/)terragrunt\.hcl$ for manager terragrunt
+DEBUG: Using file match: (^|/)\.terragrunt-version$ for manager terragrunt-version
+DEBUG: Using file match: ^.travis.yml$ for manager travis
+DEBUG: Matched 1 file(s) for manager npm: package.json
+DEBUG: npm file package.json has name "renovate-body-is-too-long"
+DEBUG: Detecting pnpm Workspaces
+DEBUG: Detecting Lerna and Yarn Workspaces
+DEBUG: Finding locked versions
+DEBUG: Found npm package files
+DEBUG: Found 1 package file(s)
+INFO: Dependency extraction complete
+{
+  "baseBranch": "main",
+  "stats": {
+    "managers": {
+      "npm": {
+        "fileCount": 1,
+        "depCount": 3
+      }
+    },
+    "total": {
+      "fileCount": 1,
+      "depCount": 3
+    }
+  }
+}
+DEBUG: Package releases lookups complete
+{
+  "baseBranch": "main"
+}
+DEBUG: branchifyUpgrades
+DEBUG: Using group branchName template
+DEBUG: Dependency esbuild is part of group all deps
+DEBUG: Using group branchName template
+DEBUG: Dependency i18next is part of group all deps
+DEBUG: Using group branchName template
+DEBUG: Dependency i18next is part of group all deps
+DEBUG: Using group branchName template
+DEBUG: Dependency json-schema-faker is part of group all deps
+DEBUG: 3 flattened updates found: esbuild, i18next, json-schema-faker
+DEBUG: Returning 1 branch(es)
+DEBUG: Fetching changelog: https://github.com/json-schema-faker/json-schema-faker (0.5.0-rcv.41 -> 0.5.0-rcv.42)
+DEBUG: Fetching changelog: https://github.com/i18next/i18next (20.4.0 -> 20.6.1)
+DEBUG: Fetching changelog: https://github.com/evanw/esbuild (0.11.6 -> 0.14.27)
+DEBUG: config.repoIsOnboarded=true
+DEBUG: packageFiles with updates
+{
+  "config": {
+    "npm": [
+      {
+        "packageFile": "package.json",
+        "deps": [
+          {
+            "depType": "dependencies",
+            "depName": "esbuild",
+            "currentValue": "0.11.6",
+            "datasource": "npm",
+            "prettyDepType": "dependency",
+            "lockedVersion": "0.11.6",
+            "depIndex": 0,
+            "updates": [
+              {
+                "bucket": "non-major",
+                "newVersion": "0.14.27",
+                "newValue": "0.14.27",
+                "releaseTimestamp": "2022-03-14T21:23:07.928Z",
+                "newMajor": 0,
+                "newMinor": 14,
+                "updateType": "minor",
+                "branchName": "renovate/all-deps"
+              }
+            ],
+            "warnings": [],
+            "versioning": "npm",
+            "sourceUrl": "https://github.com/evanw/esbuild",
+            "currentVersion": "0.11.6",
+            "isSingleVersion": true,
+            "fixedVersion": "0.11.6"
+          },
+          {
+            "depType": "dependencies",
+            "depName": "i18next",
+            "currentValue": "20.4.0",
+            "datasource": "npm",
+            "prettyDepType": "dependency",
+            "lockedVersion": "20.4.0",
+            "depIndex": 1,
+            "updates": [
+              {
+                "bucket": "non-major",
+                "newVersion": "20.6.1",
+                "newValue": "20.6.1",
+                "releaseTimestamp": "2021-09-08T08:47:47.626Z",
+                "newMajor": 20,
+                "newMinor": 6,
+                "updateType": "minor",
+                "branchName": "renovate/all-deps"
+              },
+              {
+                "bucket": "major",
+                "newVersion": "21.6.14",
+                "newValue": "21.6.14",
+                "releaseTimestamp": "2022-03-09T13:25:38.141Z",
+                "newMajor": 21,
+                "newMinor": 6,
+                "updateType": "major",
+                "branchName": "renovate/major-all-deps"
+              }
+            ],
+            "warnings": [],
+            "versioning": "npm",
+            "sourceUrl": "https://github.com/i18next/i18next",
+            "homepage": "https://www.i18next.com",
+            "currentVersion": "20.4.0",
+            "isSingleVersion": true,
+            "fixedVersion": "20.4.0"
+          },
+          {
+            "depType": "dependencies",
+            "depName": "json-schema-faker",
+            "currentValue": "0.5.0-rcv.41",
+            "datasource": "npm",
+            "prettyDepType": "dependency",
+            "lockedVersion": "0.5.0-rcv.41",
+            "depIndex": 2,
+            "updates": [
+              {
+                "bucket": "non-major",
+                "newVersion": "0.5.0-rcv.42",
+                "newValue": "0.5.0-rcv.42",
+                "releaseTimestamp": "2022-03-03T14:55:09.059Z",
+                "newMajor": 0,
+                "newMinor": 5,
+                "updateType": "patch",
+                "branchName": "renovate/all-deps"
+              }
+            ],
+            "warnings": [],
+            "versioning": "npm",
+            "sourceUrl": "https://github.com/json-schema-faker/json-schema-faker",
+            "homepage": "http://json-schema-faker.js.org",
+            "currentVersion": "0.5.0-rcv.41",
+            "isSingleVersion": true,
+            "fixedVersion": "0.5.0-rcv.41"
+          }
+        ],
+        "packageJsonName": "renovate-body-is-too-long",
+        "packageFileVersion": "1.0.0",
+        "packageJsonType": "library",
+        "yarnLock": "yarn.lock",
+        "managerData": {
+          "yarnZeroInstall": false
+        },
+        "skipInstalls": true,
+        "constraints": {},
+        "lockFiles": [
+          "yarn.lock"
+        ]
+      }
+    ]
+  }
+}
+DEBUG: processRepo()
+DEBUG: Processing 1 branch: renovate/all-deps
+DEBUG: Calculating hourly PRs remaining
+DEBUG: Retrieving PR list
+DEBUG: Retrieved 5 Pull Requests
+DEBUG: currentHourStart=2022-03-22T11:00:00.000+00:00
+DEBUG: PR hourly limit remaining: 0
+DEBUG: Calculating prConcurrentLimit (10)
+DEBUG: getBranchPr(renovate/all-deps)
+DEBUG: findPr(renovate/all-deps, undefined, open)
+DEBUG: findPr(renovate/all-deps, undefined, closed)
+DEBUG: Found PR #6
+DEBUG: 0 PRs are currently open
+DEBUG: PR concurrent limit remaining: 10
+DEBUG: Calculated maximum PRs remaining this run
+{
+  "prsRemaining": 0
+}
+DEBUG: PullRequests limit = 0
+DEBUG: Calculating hourly PRs remaining
+DEBUG: currentHourStart=2022-03-22T11:00:00.000+00:00
+DEBUG: PR hourly limit remaining: 0
+DEBUG: Calculating branchConcurrentLimit (10)
+DEBUG: 1 already existing branches found: renovate/all-deps
+DEBUG: Branch concurrent limit remaining: 9
+DEBUG: Calculated maximum branches remaining this run
+{
+  "branchesRemaining": 0
+}
+DEBUG: Branches limit = 0
+DEBUG: Setting current branch to main(branch="renovate/all-deps")
+DEBUG: latest commit(branch="renovate/all-deps")
+{
+  "branchName": "main",
+  "latestCommitDate": "2022-03-22T12:55:38+01:00"
+}
+DEBUG: getBranchPr(renovate/all-deps)(branch="renovate/all-deps")
+DEBUG: findPr(renovate/all-deps, undefined, open)(branch="renovate/all-deps")
+DEBUG: findPr(renovate/all-deps, undefined, closed)(branch="renovate/all-deps")
+DEBUG: Found PR #6(branch="renovate/all-deps")
+DEBUG: branchExists=true(branch="renovate/all-deps")
+DEBUG: dependencyDashboardCheck=unlimit(branch="renovate/all-deps")
+DEBUG: recreateClosed is true(branch="renovate/all-deps")
+DEBUG: Checking if PR has been edited(branch="renovate/all-deps")
+DEBUG: Branch has not been modified(branch="renovate/all-deps")
+{
+  "branchName": "renovate/all-deps"
+}
+DEBUG: Checking schedule(at any time, null)(branch="renovate/all-deps")
+DEBUG: No schedule defined(branch="renovate/all-deps")
+DEBUG: Branch already exists(branch="renovate/all-deps")
+DEBUG: getBranchPr(renovate/all-deps)(branch="renovate/all-deps")
+DEBUG: findPr(renovate/all-deps, undefined, open)(branch="renovate/all-deps")
+DEBUG: findPr(renovate/all-deps, undefined, closed)(branch="renovate/all-deps")
+DEBUG: Found PR #6(branch="renovate/all-deps")
+DEBUG: GitHub 404(branch="renovate/all-deps")
+{
+  "url": "repos/christoferolaison/renovate-body-is-too-long/branches/main/protection"
+}
+DEBUG: No branch protection found(branch="renovate/all-deps")
+DEBUG: Skipping stale branch check due to rebaseWhen=auto(branch="renovate/all-deps")
+DEBUG: isBranchConflicted(main, renovate/all-deps)(branch="renovate/all-deps")
+DEBUG: Setting git author name(branch="renovate/all-deps")
+{
+  "gitAuthorName": "Renovate Bot"
+}
+DEBUG: Setting git author email(branch="renovate/all-deps")
+{
+  "gitAuthorEmail": "bot@renovateapp.com"
+}
+DEBUG: Using cached result false for isBranchConflicted(main, renovate/all-deps)(branch="renovate/all-deps")
+DEBUG: Branch does not need rebasing(branch="renovate/all-deps")
+DEBUG: Using reuseExistingBranch: true(branch="renovate/all-deps")
+DEBUG: manager.getUpdatedPackageFiles() reuseExistinbranch=true(branch="renovate/all-deps")
+DEBUG: npm.updateDependency(): dependencies.esbuild = 0.14.27(branch="renovate/all-deps")
+DEBUG: npm.updateDependency(): dependencies.i18next = 20.6.1(branch="renovate/all-deps")
+DEBUG: npm.updateDependency(): dependencies.json-schema-faker = 0.5.0-rcv.42(branch="renovate/all-deps")
+DEBUG: No package files need updating(branch="renovate/all-deps")
+DEBUG: Getting updated lock files(branch="renovate/all-deps")
+DEBUG: Writing package.json files(branch="renovate/all-deps")
+{
+  "packageFiles": [
+    "package.json"
+  ]
+}
+DEBUG: Writing any updated package files(branch="renovate/all-deps")
+DEBUG: No updated lock files in branch(branch="renovate/all-deps")
+DEBUG: No files to commit(branch="renovate/all-deps")
+DEBUG: Checking if we can automerge branch(branch="renovate/all-deps")
+DEBUG: mergeStatus=no automerge(branch="renovate/all-deps")
+DEBUG: Ensuring PR(branch="renovate/all-deps")
+DEBUG: There are 0 errors and 0 warnings(branch="renovate/all-deps")
+DEBUG: getBranchPr(renovate/all-deps)(branch="renovate/all-deps")
+DEBUG: findPr(renovate/all-deps, undefined, open)(branch="renovate/all-deps")
+DEBUG: findPr(renovate/all-deps, undefined, closed)(branch="renovate/all-deps")
+DEBUG: Found PR #6(branch="renovate/all-deps")
+DEBUG: Creating PR(branch="renovate/all-deps")
+{
+  "prTitle": "Update all deps"
+}
+DEBUG: Creating PR(branch="renovate/all-deps")
+{
+  "title": "Update all deps",
+  "head": "christoferolaison:renovate/all-deps",
+  "base": "main",
+  "draft": false
+}
+DEBUG: 422 Error thrown from GitHub(branch="renovate/all-deps")
+{
+  "err": {
+    "name": "HTTPError",
+    "code": "ERR_NON_2XX_3XX_RESPONSE",
+    "timings": {
+      "start": 1647950218440,
+      "socket": 1647950218441,
+      "lookup": 1647950218441,
+      "connect": 1647950218451,
+      "secureConnect": 1647950218464,
+      "upload": 1647950218465,
+      "response": 1647950218918,
+      "end": 1647950218919,
+      "phases": {
+        "wait": 1,
+        "dns": 0,
+        "tcp": 10,
+        "tls": 13,
+        "request": 1,
+        "firstByte": 453,
+        "download": 1,
+        "total": 479
+      }
+    },
+    "message": "Response code 422 (Unprocessable Entity)",
+    "stack": "HTTPError: Response code 422 (Unprocessable Entity)\n    at Request.<anonymous> (/home/ubuntu/renovateapp/node_modules/got/dist/source/as-promise/index.js:117:42)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+    "options": {
+      "headers": {
+        "user-agent": "Renovate Bot (GitHub App 2740)",
+        "accept": "application/vnd.github.machine-man-preview+json",
+        "authorization": "***********",
+        "content-type": "application/json",
+        "content-length": "68855",
+        "accept-encoding": "gzip, deflate, br"
+      },
+      "url": "https://api.github.com/repos/christoferolaison/renovate-body-is-too-long/pulls",
+      "hostType": "github",
+      "username": "",
+      "password": "",
+      "method": "POST",
+      "http2": false
+    },
+    "response": {
+      "statusCode": 422,
+      "statusMessage": "Unprocessable Entity",
+      "body": {
+        "message": "Validation Failed",
+        "errors": [
+          {
+            "resource": "Issue",
+            "code": "custom",
+            "field": "body",
+            "message": "body is too long (maximum is 65536 characters)"
+          }
+        ],
+        "documentation_url": "https://docs.github.com/rest/reference/pulls#create-a-pull-request"
+      },
+      "headers": {
+        "server": "GitHub.com",
+        "date": "Tue, 22 Mar 2022 11:56:58 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "242",
+        "x-github-media-type": "github.v3; param=machine-man-preview; format=json",
+        "x-ratelimit-limit": "5000",
+        "x-ratelimit-remaining": "4958",
+        "x-ratelimit-reset": "1647953347",
+        "x-ratelimit-used": "42",
+        "x-ratelimit-resource": "core",
+        "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
+        "access-control-allow-origin": "*",
+        "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+        "x-frame-options": "deny",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "0",
+        "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+        "content-security-policy": "default-src 'none'",
+        "vary": "Accept-Encoding, Accept, X-Requested-With",
+        "x-github-request-id": "817C:61C3:17231D9:18DADAE:6239B98A",
+        "connection": "close"
+      },
+      "httpVersion": "1.1"
+    }
+  }
+}
+DEBUG: Pull request creation error(branch="renovate/all-deps")
+{
+  "err": {
+    "hostType": "github",
+    "err": {
+      "name": "HTTPError",
+      "code": "ERR_NON_2XX_3XX_RESPONSE",
+      "timings": {
+        "start": 1647950218440,
+        "socket": 1647950218441,
+        "lookup": 1647950218441,
+        "connect": 1647950218451,
+        "secureConnect": 1647950218464,
+        "upload": 1647950218465,
+        "response": 1647950218918,
+        "end": 1647950218919,
+        "phases": {
+          "wait": 1,
+          "dns": 0,
+          "tcp": 10,
+          "tls": 13,
+          "request": 1,
+          "firstByte": 453,
+          "download": 1,
+          "total": 479
+        }
+      },
+      "message": "Response code 422 (Unprocessable Entity)",
+      "stack": "HTTPError: Response code 422 (Unprocessable Entity)\n    at Request.<anonymous> (/home/ubuntu/renovateapp/node_modules/got/dist/source/as-promise/index.js:117:42)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+      "options": {
+        "headers": {
+          "user-agent": "Renovate Bot (GitHub App 2740)",
+          "accept": "application/vnd.github.machine-man-preview+json",
+          "authorization": "***********",
+          "content-type": "application/json",
+          "content-length": "68855",
+          "accept-encoding": "gzip, deflate, br"
+        },
+        "url": "https://api.github.com/repos/christoferolaison/renovate-body-is-too-long/pulls",
+        "hostType": "github",
+        "username": "",
+        "password": "",
+        "method": "POST",
+        "http2": false
+      },
+      "response": {
+        "statusCode": 422,
+        "statusMessage": "Unprocessable Entity",
+        "body": {
+          "message": "Validation Failed",
+          "errors": [
+            {
+              "resource": "Issue",
+              "code": "custom",
+              "field": "body",
+              "message": "body is too long (maximum is 65536 characters)"
+            }
+          ],
+          "documentation_url": "https://docs.github.com/rest/reference/pulls#create-a-pull-request"
+        },
+        "headers": {
+          "server": "GitHub.com",
+          "date": "Tue, 22 Mar 2022 11:56:58 GMT",
+          "content-type": "application/json; charset=utf-8",
+          "content-length": "242",
+          "x-github-media-type": "github.v3; param=machine-man-preview; format=json",
+          "x-ratelimit-limit": "5000",
+          "x-ratelimit-remaining": "4958",
+          "x-ratelimit-reset": "1647953347",
+          "x-ratelimit-used": "42",
+          "x-ratelimit-resource": "core",
+          "access-control-expose-headers": "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
+          "access-control-allow-origin": "*",
+          "strict-transport-security": "max-age=31536000; includeSubdomains; preload",
+          "x-frame-options": "deny",
+          "x-content-type-options": "nosniff",
+          "x-xss-protection": "0",
+          "referrer-policy": "origin-when-cross-origin, strict-origin-when-cross-origin",
+          "content-security-policy": "default-src 'none'",
+          "vary": "Accept-Encoding, Accept, X-Requested-With",
+          "x-github-request-id": "817C:61C3:17231D9:18DADAE:6239B98A",
+          "connection": "close"
+        },
+        "httpVersion": "1.1"
+      }
+    },
+    "message": "external-host-error",
+    "stack": "Error: external-host-error\n    at handleGotError (/home/ubuntu/renovateapp/node_modules/renovate/dist/util/http/github.js:92:16)\n    at GithubHttp.request (/home/ubuntu/renovateapp/node_modules/renovate/dist/util/http/github.js:219:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async GithubHttp.requestJson (/home/ubuntu/renovateapp/node_modules/renovate/dist/util/http/index.js:149:21)\n    at async Proxy.createPr (/home/ubuntu/renovateapp/node_modules/renovate/dist/modules/platform/github/index.js:1179:17)\n    at async ensurePr (/home/ubuntu/renovateapp/node_modules/renovate/dist/workers/repository/update/pr/index.js:349:22)\n    at async processBranch (/home/ubuntu/renovateapp/node_modules/renovate/dist/workers/repository/update/branch/index.js:497:32)\n    at async writeUpdates (/home/ubuntu/renovateapp/node_modules/renovate/dist/workers/repository/process/write.js:25:21)\n    at async update (/home/ubuntu/renovateapp/node_modules/renovate/dist/workers/repository/process/extract-update.js:108:15)\n    at async Object.renovateRepository (/home/ubuntu/renovateapp/node_modules/renovate/dist/workers/repository/index.js:41:21)\n    at async renovateRepository (/home/ubuntu/renovateapp/app/worker/index.js:427:26)\n    at async /home/ubuntu/renovateapp/app/worker/index.js:678:5"
+  }
+}
+DEBUG: getBranchPr(renovate/all-deps)
+DEBUG: findPr(renovate/all-deps, undefined, open)
+DEBUG: findPr(renovate/all-deps, undefined, closed)
+DEBUG: Found PR #6
+DEBUG: Ensuring Dependency Dashboard
+DEBUG: ensureIssue(Dependency Dashboard)
+DEBUG: Patching issue
+DEBUG: Issue updated
+DEBUG: Removing any stale branches
+DEBUG: config.repoIsOnboarded=true
+DEBUG: Branch lists
+{
+  "branchList": [
+    "renovate/all-deps"
+  ],
+  "renovateBranches": [
+    "renovate/all-deps"
+  ]
+}
+DEBUG: remainingBranches=
+DEBUG: No branches to clean up
+DEBUG: Repository timing splits (milliseconds)
+{
+  "splits": {
+    "init": 1987,
+    "extract": 2292,
+    "lookup": 1595,
+    "update": 6742
+  },
+  "total": 13353
+}
+DEBUG: http statistics
+{
+  "urls": {
+    "https://api.github.com/graphql (POST)": 3,
+    "https://api.github.com/repos/christoferolaison/renovate-body-is-too-long/contents/renovate.json (GET)": 1,
+    "https://api.github.com/repos/christoferolaison/renovate-body-is-too-long/issues/4 (GET)": 2,
+    "https://api.github.com/repos/christoferolaison/renovate-body-is-too-long/issues/4 (PATCH)": 1,
+    "https://api.github.com/repos/christoferolaison/renovate-body-is-too-long/pulls (GET)": 1,
+    "https://api.github.com/repos/json-schema-faker/json-schema-faker (GET)": 1,
+    "https://api.github.com/repos/json-schema-faker/json-schema-faker/git/blobs/301ec24394f38a97e30988bac8498466a7c29eba (GET)": 1,
+    "https://api.github.com/repos/json-schema-faker/json-schema-faker/git/trees/master (GET)": 1,
+    "https://api.github.com/repos/json-schema-faker/json-schema-faker/releases (GET)": 1,
+    "https://api.github.com/repos/whitesource/merge-confidence/contents/beta.json (GET)": 1
+  },
+  "hostStats": {
+    "api.github.com": {
+      "requestCount": 13,
+      "requestAvgMs": 218,
+      "queueAvgMs": 0
+    }
+  },
+  "totalRequests": 13
+}
+INFO: Repository finished
+{
+  "durationMs": 13353
+}
