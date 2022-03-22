@@ -1,5 +1,15 @@
 {
-  "extends": [
-    "config:base"
+  "extends": ["config:base", ":preserveSemverRanges"],
+  "major": {
+    "enabled": false
+  },
+  "timezone": "Europe/Stockholm",
+  "rangeStrategy": "bump",
+  "prConcurrentLimit": 20,
+  "packageRules": [
+    {
+      "groupName": "all deps",
+      "matchPaths": ["+(package.json)"]
+    }
   ]
 }
