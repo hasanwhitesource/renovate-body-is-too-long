@@ -1,6 +1,6 @@
 {
   
-  "extends": ["github>whitesource/merge-confidence:beta","config:base"],
+  "extends": ["github>whitesource/merge-confidence:beta"],
   "major": {
     "enabled": false
   },
